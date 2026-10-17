@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: purchaseguard
+    runtime: docker
+    plan: starter
+    healthCheckPath: /api/health
+    envVars:
+      - key: PORT
+        value: 8080
+      - key: SERPAPI_KEY
+        sync: false
+      - key: SHOPPING_COUNTRY
+        value: in
+      - key: SHOPPING_LANGUAGE
+        value: en
+      - key: SHOPPING_GOOGLE_DOMAIN
+        value: google.co.in

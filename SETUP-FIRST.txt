@@ -1,0 +1,10 @@
+PURCHASEGUARD 2.0 — FIRST START
+
+1. Install Node.js 20+ (Node.js 22 recommended).
+2. Double-click start-windows.bat.
+3. On first run, .env is created and opened in Notepad.
+4. Add your licensed provider key after SERPAPI_KEY= and save the file.
+5. Double-click start-windows.bat again. Tests run before the server starts.
+6. Open http://localhost:8080
+
+Important: a key enables Google Shopping discovery. It does not guarantee results from all 11 retailers for every product, and it is not equivalent to 11 direct official retailer APIs. See README.md for the data-access boundary, optional direct API configuration, and deployment steps. Never share or commit .env.

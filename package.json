@@ -1,0 +1,16 @@
+{
+  "name": "purchaseguard-multistore",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Multi-store price discovery, exact-variant screening, and transparent provider status",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test",
+    "check": "node --check src/server.js && node --check src/providers.js && node --check src/matching.js && node --check src/env.js && node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
